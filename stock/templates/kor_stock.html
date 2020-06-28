@@ -1,0 +1,95 @@
+{% extends 'template.html' %}
+
+{% block content %}
+<h1></h1>
+<h2> {{first}} </h2>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">회사</th>
+      <th scope="col">전일가(전일 종가)</th>
+      <th scope="col">시가</th>
+      <th scope="col">현재가(오늘 종가)</th>
+      <th scope="col">고가</th>
+      <th scope="col">저가</th>
+      <th scope="col">거래량</th>
+      <th scope="col">52주 최고가</th>
+      <th scope="col">52주 최저가</th>
+        <th scope="col">기업 실적</th>
+    </tr>
+  </thead>
+  <tbody>
+
+  <tr>
+      <th scope="row">{{ 1.종목명 }}</th>
+      <td>{{ 1.전일가 }}원</td>
+      <td>{{ 1.시가 }}원</td>
+      <td>{{ 1.종가 }}원</td>
+      <td>{{ 1.고가 }}원</td>
+      <td>{{ 1.저가 }}원</td>
+      <td>{{ 1.거래량 }}</td>
+      <td>{{ 1.52주최고 }}원</td>
+      <td>{{ 1.52주최저 }}원</td>
+      <td><a href="info_stock1" class="button">실적확인</a></td>
+    </tr>
+  <tr>
+      <th scope="row">{{ 2.종목명 }}</th>
+      <td>{{ 2.전일가 }}원</td>
+      <td>{{ 2.시가 }}원</td>
+      <td>{{ 2.종가 }}원</td>
+      <td>{{ 2.고가 }}원</td>
+      <td>{{ 2.저가 }}원</td>
+      <td>{{ 2.거래량 }}</td>
+      <td>{{ 2.52주최고 }}원</td>
+      <td>{{ 2.52주최저 }}원</td>
+      <td><a href="info_stock2" class="button">실적확인</a></td>
+    </tr>
+
+  <tr>
+      <th scope="row">{{ 3.종목명 }}</th>
+      <td>{{ 3.전일가 }}원</td>
+      <td>{{ 3.시가 }}원</td>
+      <td>{{ 3.종가 }}원</td>
+      <td>{{ 3.고가 }}원</td>
+      <td>{{ 3.저가 }}원</td>
+      <td>{{ 3.거래량 }}</td>
+      <td>{{ 3.52주최고 }}원</td>
+      <td>{{ 3.52주최저 }}원</td>
+      <td><a href="info_stock3" class="button">실적확인</a></td>
+    </tr>
+  <tr>
+      <th scope="row">{{ 4.종목명 }}</th>
+      <td>{{ 4.전일가 }}원</td>
+      <td>{{ 4.시가 }}원</td>
+      <td>{{ 4.종가 }}원</td>
+      <td>{{ 4.고가 }}원</td>
+      <td>{{ 4.저가 }}원</td>
+      <td>{{ 4.거래량 }}</td>
+      <td>{{ 4.52주최고 }}원</td>
+      <td>{{ 4.52주최저 }}원</td>
+      <td><a href="info_stock4" class="button">실적확인</a></td>
+    </tr>
+  <tr>
+      <th scope="row">{{ 5.종목명 }}</th>
+      <td>{{ 5.전일가 }}원</td>
+      <td>{{ 5.시가 }}원</td>
+      <td>{{ 5.종가 }}원</td>
+      <td>{{ 5.고가 }}원</td>
+      <td>{{ 5.저가 }}원</td>
+      <td>{{ 5.거래량 }}</td>
+      <td>{{ 5.52주최고 }}원</td>
+      <td>{{ 5.52주최저 }}원</td>
+      <td><a href="info_stock5" class="button">실적확인</a></td>
+    </tr>
+
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+{% endblock %}

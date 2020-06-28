@@ -1,0 +1,84 @@
+{% extends 'template.html' %}
+{% block content %}
+
+<h1></h1>
+<h2>IT</h2>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Inc</th>
+      <th scope="col">Last Price</th>
+      <th scope="col">Open Price</th>
+      <th scope="col">Close Price</th>
+      <th scope="col">High</th>
+      <th scope="col">Low</th>
+      <th scope="col">Volume</th>
+      <th scope="col">52Week High</th>
+      <th scope="col">52Week Low</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+      <th scope="row">{{ stock_info1.quote.companyName }}</th>
+      <td>${{ stock_info1.quote.latestPrice }}</td>
+      <td>${{ stock_info1.quote.open }}</td>
+      <td>${{ stock_info1.quote.close }}</td>
+      <td>${{ stock_info1.quote.high }}</td>
+      <td>${{ stock_info1.quote.low }}</td>
+      <td>{{ stock_info1.quote.latestVolume }}</td>
+      <td>${{ stock_info1.quote.week52High }}</td>
+      <td>${{ stock_info1.quote.week52Low }}</td>
+    </tr>
+   <tr>
+      <th scope="row">{{ stock_info2.quote.companyName }}</th>
+      <td>${{ stock_info2.quote.latestPrice }}</td>
+      <td>${{ stock_info2.quote.open }}</td>
+      <td>${{ stock_info2.quote.close }}</td>
+      <td>${{ stock_info2.quote.high }}</td>
+      <td>${{ stock_info2.quote.low }}</td>
+      <td>{{ stock_info2.quote.latestVolume }}</td>
+      <td>${{ stock_info2.quote.week52High }}</td>
+      <td>${{ stock_info2.quote.week52Low }}</td>
+    </tr>
+  <tr>
+      <th scope="row">{{ stock_info3.quote.companyName }}</th>
+      <td>${{ stock_info3.quote.latestPrice }}</td>
+      <td>${{ stock_info3.quote.open }}</td>
+      <td>${{ stock_info3.quote.close }}</td>
+      <td>${{ stock_info3.quote.high }}</td>
+      <td>${{ stock_info3.quote.low }}</td>
+      <td>{{ stock_info3.quote.latestVolume }}</td>
+      <td>${{ stock_info3.quote.week52High }}</td>
+      <td>${{ stock_info3.quote.week52Low }}</td>
+    </tr>
+  <tr>
+      <th scope="row">{{ stock_info4.quote.companyName }}</th>
+      <td>${{ stock_info4.quote.latestPrice }}</td>
+      <td>${{ stock_info4.quote.open }}</td>
+      <td>${{ stock_info4.quote.close }}</td>
+      <td>${{ stock_info4.quote.high }}</td>
+      <td>${{ stock_info4.quote.low }}</td>
+      <td>{{ stock_info4.quote.latestVolume }}</td>
+      <td>${{ stock_info4.quote.week52High }}</td>
+      <td>${{ stock_info4.quote.week52Low }}</td>
+    </tr>
+  <tr>
+      <th scope="row">{{ stock_info5.quote.companyName }}</th>
+      <td>${{ stock_info5.quote.latestPrice }}</td>
+      <td>${{ stock_info5.quote.open }}</td>
+      <td>${{ stock_info5.quote.close }}</td>
+      <td>${{ stock_info5.quote.high }}</td>
+      <td>${{ stock_info5.quote.low }}</td>
+      <td>{{ stock_info5.quote.latestVolume }}</td>
+      <td>${{ stock_info5.quote.week52High }}</td>
+      <td>${{ stock_info5.quote.week52Low }}</td>
+    </tr>
+
+
+  </tbody>
+</table>
+<!-- api변수 리턴 받은거임 //-->
+<!-- 순서대로 현재가 시가 종가 최고가 최저가 거래량 52주 최고가 52주 최저가가-->
+
+
+{% endblock %}

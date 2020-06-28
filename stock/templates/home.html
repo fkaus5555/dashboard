@@ -1,0 +1,55 @@
+{% extends 'template.html' %}
+{% load static %}
+{% block content %}
+
+
+<section id="intro">
+		<header>
+			<h2></h2>
+		</header>
+		<p></p>
+		<img src="{% static "img/intro_.png" %}">
+	</section>
+	<div id="content">
+		<div id="mainContent">
+			<section>
+
+
+					<header>
+						<h2>About</h2>
+
+					</header>
+					<div>
+						<p>본 사이트는 네이버 금융 정보 크롤링과 iex cloud api를 활용한 주식시세정보 사이트입니다.</p>
+
+
+
+ 						<p>
+						<ul>
+						<li><a class="nav-link" href="/kor_stock">국내주식 확인</a></li>
+						<li><a class="nav-link" href="/stock">해외주식 확인</a></li>
+						</ul>
+						</p>
+					</div>
+				<h3>Tip</h3>
+			<div>
+
+				주어진 주식정보 외 원하는 주식정보 검색을 원하실 경우,<br>우측 상단 검색창에 기업코드를 입력하신 후 Search버튼을 눌러주세요.<br><br>
+
+				<ul><li><strong>유니테스트</strong>(086390)</li></ul>
+				<ul><li><strong>SK</strong>(034730)</li></ul>
+				<ul><li><strong>현대차</strong>(005380)</li></ul>
+				<ul><li><strong>CJ</strong>(001040)</li></ul>
+				<ul><li><strong>오뚜기</strong>(007310)</li></ul>
+				<ul><li>그 외 종목코드를 알고싶다면<strong> <a href="https://www.ktb.co.kr/trading/popup/itemPop.jspx" class="button">클릭</strong></li></ul>
+
+
+
+
+			</div>
+
+			</section>
+
+		</div>
+
+{% endblock %}
